@@ -8,8 +8,8 @@
 
 - id: bazel
   name: bazel
-  description: Format BUILD, BUILD.bazel and .bzl with buildifier
+  description: Format WORKSPACE, BUILD, BUILD.bazel and .bzl with buildifier
   language: system
-  files: (BUILD|BUILD\.bazel|\.(bazel|bzl))$
+  files: (WORKSPACE|BUILD|BUILD\.bazel|\.bzl)$
   entry: buildifier
   args: []
